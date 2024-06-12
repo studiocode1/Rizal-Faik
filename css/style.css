@@ -1,0 +1,733 @@
+:root {
+  --shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  --sh1: 5px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: "Poppins", Helvetica, sans-serif;
+  color: #253331;
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f1f1f1;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../src/img/herob.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.hero h2 {
+  font-size: 5rem;
+  font-family: "parisienne", cursive;
+  font-weight: 500;
+  text-shadow: var(--shadow);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.hero a {
+  text-decoration: none;
+  color: white;
+  background-color: #8f5c54;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-top: 2rem;
+}
+
+.hero a:hover {
+  color: #8f5c54;
+  background-color: #e9dfd5;
+}
+
+.hero button {
+  font-size: 1rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.5rem;
+  background-color: #8f5c54;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  border: none;
+  outline: none;
+}
+
+.hero button:hover {
+  color: #8f5c54;
+  background-color: #dcd8d0;
+}
+
+/* section home start */
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image: url(../src/img/herob.JPG);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 1.4rem 5%;
+  text-align: center;
+}
+
+.home .ayat {
+  width: 100%;
+  font-size: 1.4rem;
+  text-wrap: pretty;
+}
+
+.home h2 {
+  font-size: 2rem;
+  border-bottom: 3px solid #253331;
+  width: fit-content;
+  padding-bottom: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.home p {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.home .profil-coce {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  border: 1px solid #8f5c54;
+  box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  background-color: rgba(248, 250, 252, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1.5rem;
+}
+
+.home .profil-coce h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "Parisienne";
+  text-shadow: var(--shadow);
+  text-wrap: nowrap;
+}
+
+.home .profil-coce h1 {
+  font-family: "Parisienne", cursive;
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+.home .profil-coce p {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+/* section home end */
+
+/* section wedding start */
+.wedding {
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-image: url("../src/img/Unknown\ 16.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 1.4rem 5%;
+  justify-content: center;
+  text-align: center;
+}
+
+.wedding h2,
+.story h2,
+.gifts h2 {
+  font-size: 3rem;
+  font-family: "Parisienne";
+  text-shadow: var(--shadow);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.wedding p,
+.story p,
+.gifts p {
+  font-size: 1.4rem;
+}
+
+.wedding .countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.wedding .countdown .box {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background: #f8fafc;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3rem;
+}
+
+.card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  border: 1px solid #fff;
+  border-radius: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+.card .card-header .hand {
+  transform: rotate(-30deg);
+}
+
+.card .card-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #8f5c54;
+  color: white;
+  padding: 0.5rem;
+}
+
+.card .card-header h3 {
+  font-size: 2rem;
+}
+
+.card .card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.card .card-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.card .card-footer button {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #8f5c54;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.card .card-footer button a {
+  color: white;
+  text-decoration: none;
+}
+
+.card .card-footer i {
+  font-size: 1.2rem;
+}
+/* section wedding end */
+
+/* section story start */
+.story {
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-image: url(../src/img/Rose.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.4rem 5%;
+  justify-content: center;
+  text-align: center;
+}
+
+.story .kotak {
+  width: 90%;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  border: 1px solid #fff;
+  border-radius: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  /* word-break: break-all; */
+  background: rgba(248, 250, 252, 0.5);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.story .kotak h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.story .quotes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.story .quotes h3 {
+  font-size: 3rem;
+  text-shadow: var(--sh1);
+}
+
+.story .quotes p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  mix-blend-mode: darken;
+}
+/* section story end */
+
+/* section gifts start */
+.gifts {
+  width: 100%;
+  display: flex;
+  position: relative;
+  background-image: url(../src/img/✨Aesthetic\ minimalist\ flower\ neutral\ wallpaper✨.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 5%;
+  justify-content: center;
+  text-align: center;
+}
+
+.gifts h3 {
+  font-size: 2rem;
+  font-family: "Parisienne", cursive;
+  font-weight: 700;
+  margin: 3rem 0;
+  text-shadow: var(--sh1);
+}
+
+.gifts button {
+  padding: 0.7rem 1rem;
+  outline: none;
+  box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: #8f5c54;
+  color: #f8fafc;
+  border: none;
+  outline: none;
+}
+
+.gifts button:hover {
+  background-color: #e9dfd5;
+  color: #253331;
+}
+
+.gifts .modal-content .logo {
+  margin: 0.5rem 0;
+}
+
+.gifts .modal-popup {
+  width: 80%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: solid 1px #8f5c54;
+  border-radius: 2rem;
+  background-image: url(../src/img/IMG_0140.JPG);
+  background-position: center;
+  background-size: cover;
+  display: none;
+  transform: scale(0);
+  transition: 1s linear;
+  z-index: 10;
+}
+
+.gifts .modal-popup.active {
+  display: block;
+  transform: scale(1);
+  top: 35%;
+}
+
+.block {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1;
+  display: none;
+  transform: scale(0);
+  transition: 0.5s linear;
+}
+
+.block.active {
+  display: block;
+  transform: scale(1);
+}
+
+.gifts .modal-content {
+  padding: 1.4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.gifts .modal-content .rek {
+  margin: 2rem 0;
+}
+
+.gifts .modal-content p {
+  margin: 0.5rem 0;
+}
+
+.gifts .modal-content p button {
+  font-size: 1.2rem;
+  padding: 0.3 1.2rem;
+  margin-left: 0.5rem;
+  background-color: #253331;
+}
+
+.gifts .modal-content button {
+  margin-top: 2rem;
+  padding: 0.5rem 1.4rem;
+  outline: none;
+  border: none;
+  bottom: 0;
+  font-size: 1.2rem;
+  background-color: #253331;
+}
+
+.gifts .modal-content button:hover {
+  color: #253331;
+  background-color: #dcd8d0;
+}
+
+.cover {
+  margin-top: 3rem;
+}
+/* section gifts end */
+/* confirm start */
+.confirm-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5rem auto 3rem;
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  background: rgba(248, 250, 252, 0.5);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-content {
+  text-align: start;
+}
+
+.form-label {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.form-select {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.confirm-box button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* confirm end */
+/* comment start */
+.comment-box {
+  width: 100%;
+  max-width: 600px;
+  margin: 5rem auto 0;
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  background: rgba(248, 250, 252, 0.5);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  position: relative;
+  box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.comment-content {
+  width: 95%;
+  max-height: 600px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.volume {
+  width: 100%;
+  display: flex;
+
+  text-align: start;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #253331;
+  padding-bottom: 0.5rem;
+}
+
+.profil {
+  width: 40px;
+  font-size: 2.5rem;
+  margin: 0 0.5rem;
+}
+
+.username {
+  font-size: 1.4rem;
+}
+
+.comment-content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.comment-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: #f8fafc;
+}
+
+.comment-form input::placeholder,
+.comment-form textarea::placeholder {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+}
+
+.comment-form button,
+.confirm-box button {
+  padding: 1rem 3rem;
+  background-color: #253331;
+  color: #f8fafc;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  justify-self: end;
+}
+
+.comment-form button:hover {
+  background-color: #e9dfd5;
+  color: #253331;
+}
+
+/* comment end */
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #253331;
+  color: #f8fafc;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+footer ul a {
+  color: #f8fafc;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  z-index: 9999;
+}
+
+.error-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.error-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-page .left {
+  font-size: 6rem;
+  margin-right: 1rem;
+}
+
+.error-page .large {
+  font-size: 6rem;
+}
+
+.error-page .small {
+  font-size: 1.4rem;
+}
+
+@keyframes rotating {
+  from {
+    transform: 0;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (width > 576px) {
+  .hero,
+  .home,
+  .wedding,
+  .story,
+  .gifts,
+  footer {
+    display: none;
+  }
+
+  .error-page {
+    display: flex;
+  }
+}
